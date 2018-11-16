@@ -13,10 +13,10 @@
      xmlns:rioter="http://w3id.org/rioter#">
     <owl:Ontology rdf:about="http://w3id.org/rioter">
         <owl:versionIRI rdf:resource="http://w3id.org/rioter"/>
-        <dc:contributor>Eugene Westerhof</dc:contributor>
-        <dc:contributor>Lluis Echeverria</dc:contributor>
-        <dc:contributor>Xavier Domingo i Albin</dc:contributor>
-        <dc:creator>Aitor Corchero Rodríguez</dc:creator>
+        <dc:contributor>Eugene Westerhof (Wageningen University)</dc:contributor>
+        <dc:contributor>Lluis Echeverria (Eurecat Technology Centre)</dc:contributor>
+        <dc:contributor>Xavier Domingo i Albin (Eurecat Technology Centre)</dc:contributor>
+        <dc:creator>Aitor Corchero Rodríguez (Eurecat Technology Centre)</dc:creator>
         <dc:description>The ontology is focused on a data model for meeting IoT services with real measurements and the corresponding real-objects (even devices or natural objects).</dc:description>
         <dc:source>rioter</dc:source>
         <dc:title>Rioter ontology to meet Physical and Digital Worlds</dc:title>

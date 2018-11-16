@@ -1,9 +1,9 @@
 <http://w3id.org/rioter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://w3id.org/rioter> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/rioter> .
-<http://w3id.org/rioter> <http://purl.org/dc/elements/1.1/contributor> "Eugene Westerhof" .
-<http://w3id.org/rioter> <http://purl.org/dc/elements/1.1/contributor> "Lluis Echeverria" .
-<http://w3id.org/rioter> <http://purl.org/dc/elements/1.1/contributor> "Xavier Domingo i Albin" .
-<http://w3id.org/rioter> <http://purl.org/dc/elements/1.1/creator> "Aitor Corchero Rodríguez" .
+<http://w3id.org/rioter> <http://purl.org/dc/elements/1.1/contributor> "Eugene Westerhof (Wageningen University)" .
+<http://w3id.org/rioter> <http://purl.org/dc/elements/1.1/contributor> "Lluis Echeverria (Eurecat Technology Centre)" .
+<http://w3id.org/rioter> <http://purl.org/dc/elements/1.1/contributor> "Xavier Domingo i Albin (Eurecat Technology Centre)" .
+<http://w3id.org/rioter> <http://purl.org/dc/elements/1.1/creator> "Aitor Corchero Rodríguez (Eurecat Technology Centre)" .
 <http://w3id.org/rioter> <http://purl.org/dc/elements/1.1/description> "The ontology is focused on a data model for meeting IoT services with real measurements and the corresponding real-objects (even devices or natural objects)." .
 <http://w3id.org/rioter> <http://purl.org/dc/elements/1.1/source> "rioter" .
 <http://w3id.org/rioter> <http://purl.org/dc/elements/1.1/title> "Rioter ontology to meet Physical and Digital Worlds" .

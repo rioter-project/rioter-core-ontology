@@ -8,10 +8,10 @@
 
 <http://w3id.org/rioter> rdf:type owl:Ontology ;
                           owl:versionIRI <http://w3id.org/rioter> ;
-                          <http://purl.org/dc/elements/1.1/contributor> "Eugene Westerhof" ,
-                                                                        "Lluis Echeverria" ,
-                                                                        "Xavier Domingo i Albin" ;
-                          <http://purl.org/dc/elements/1.1/creator> "Aitor Corchero Rodríguez" ;
+                          <http://purl.org/dc/elements/1.1/contributor> "Eugene Westerhof (Wageningen University)" ,
+                                                                        "Lluis Echeverria (Eurecat Technology Centre)" ,
+                                                                        "Xavier Domingo i Albin (Eurecat Technology Centre)" ;
+                          <http://purl.org/dc/elements/1.1/creator> "Aitor Corchero Rodríguez (Eurecat Technology Centre)" ;
                           <http://purl.org/dc/elements/1.1/description> "The ontology is focused on a data model for meeting IoT services with real measurements and the corresponding real-objects (even devices or natural objects)." ;
                           <http://purl.org/dc/elements/1.1/source> "rioter" ;
                           <http://purl.org/dc/elements/1.1/title> "Rioter ontology to meet Physical and Digital Worlds" ;

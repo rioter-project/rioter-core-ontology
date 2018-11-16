@@ -518,14 +518,14 @@
   "@id" : "http://w3id.org/rioter",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/contributor" : [ {
-    "@value" : "Eugene Westerhof"
+    "@value" : "Eugene Westerhof (Wageningen University)"
   }, {
-    "@value" : "Lluis Echeverria"
+    "@value" : "Lluis Echeverria (Eurecat Technology Centre)"
   }, {
-    "@value" : "Xavier Domingo i Albin"
+    "@value" : "Xavier Domingo i Albin (Eurecat Technology Centre)"
   } ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "Aitor Corchero Rodríguez"
+    "@value" : "Aitor Corchero Rodríguez (Eurecat Technology Centre)"
   } ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "The ontology is focused on a data model for meeting IoT services with real measurements and the corresponding real-objects (even devices or natural objects)."
