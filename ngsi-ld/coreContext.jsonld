@@ -1,0 +1,118 @@
+{
+  "@graph" : [ {
+    "@id" : "http://uri.etsi.org/ngsi-ld/coreContext/",
+    "@type" : "owl:Ontology",
+    "imports" : "https://purl.org/geojson/vocab",
+    "versionInfo" : "Created with TopBraid Composer"
+  }, {
+    "@id" : "coreContext:Geometry",
+    "@type" : "owl:Class",
+    "subClassOf" : "owl:Thing"
+  }, {
+    "@id" : "coreContext:TimeInterval",
+    "@type" : "owl:Class",
+    "subClassOf" : "owl:Thing"
+  }, {
+    "@id" : "coreContext:createdAt",
+    "@type" : "owl:DatatypeProperty",
+    "range" : "xsd:dateTime",
+    "subPropertyOf" : "coreContext:temporalProperty"
+  }, {
+    "@id" : "coreContext:end",
+    "@type" : "owl:DatatypeProperty",
+    "range" : "xsd:dateTime",
+    "subPropertyOf" : "coreContext:temporalProperty"
+  }, {
+    "@id" : "coreContext:geolocation",
+    "@type" : "owl:DatatypeProperty"
+  }, {
+    "@id" : "coreContext:hasObject",
+    "@type" : "rdf:Property"
+  }, {
+    "@id" : "coreContext:location",
+    "@type" : "owl:DatatypeProperty",
+    "range" : "rdfs:Literal",
+    "subPropertyOf" : "coreContext:geolocation"
+  }, {
+    "@id" : "coreContext:modifiedAt",
+    "@type" : "owl:DatatypeProperty",
+    "range" : "xsd:dateTime",
+    "subPropertyOf" : "coreContext:temporalProperty"
+  }, {
+    "@id" : "coreContext:observationSpace",
+    "@type" : "rdf:Property",
+    "subPropertyOf" : "coreContext:geolocation"
+  }, {
+    "@id" : "coreContext:observedAt",
+    "@type" : "owl:DatatypeProperty",
+    "range" : "xsd:dateTime",
+    "subPropertyOf" : "coreContext:temporalProperty"
+  }, {
+    "@id" : "coreContext:operationSpace",
+    "@type" : "rdf:Property",
+    "subPropertyOf" : "coreContext:geolocation"
+  }, {
+    "@id" : "coreContext:start",
+    "@type" : "owl:DatatypeProperty",
+    "range" : "xsd:dateTime",
+    "subPropertyOf" : "coreContext:temporalProperty"
+  }, {
+    "@id" : "coreContext:temporalProperty",
+    "@type" : "rdf:Property"
+  }, {
+    "@id" : "coreContext:unitCode",
+    "@type" : "rdf:Property"
+  }, {
+    "@id" : "coreContext:value",
+    "@type" : "owl:DatatypeProperty"
+  }, {
+    "@id" : "geojson:LineString",
+    "subClassOf" : "coreContext:Geometry"
+  }, {
+    "@id" : "geojson:MultiLineString",
+    "subClassOf" : "coreContext:Geometry"
+  }, {
+    "@id" : "geojson:MultiPoint",
+    "subClassOf" : "coreContext:Geometry"
+  }, {
+    "@id" : "geojson:MultiPolygon",
+    "subClassOf" : "coreContext:Geometry"
+  }, {
+    "@id" : "geojson:Point",
+    "subClassOf" : "coreContext:Geometry"
+  }, {
+    "@id" : "geojson:Polygon",
+    "subClassOf" : "coreContext:Geometry"
+  }, {
+    "@id" : "geojson:coordinates",
+    "subPropertyOf" : "coreContext:geolocation"
+  } ],
+  "@context" : {
+    "subPropertyOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+      "@type" : "@id"
+    },
+    "range" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
+      "@type" : "@id"
+    },
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "imports" : {
+      "@id" : "http://www.w3.org/2002/07/owl#imports",
+      "@type" : "@id"
+    },
+    "geojson" : "https://purl.org/geojson/vocab#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "coreContext" : "http://uri.etsi.org/ngsi-ld/coreContext/",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "iot" : "http://iotschema.org/"
+  }
+}

@@ -1,0 +1,360 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rioter="http://w3id.org/rioter#"
+    xmlns:saref="http://w3id.org/saref#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:wot="https://www.w3.org/ns/td#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:geo="http://www.opengis.net/ont/geosparql#"
+    xmlns:j.0="http://www.w3.org/ns/shacl#"
+    xmlns:om="http://www.wurvoc.org/vocabularies/om-1.8/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xml:base="http://w3id.org/rioter">
+  <owl:Ontology rdf:about="">
+    <dcterms:license>https://opensource.org/licenses/MIT</dcterms:license>
+    <dc:title>Rioter ontology to meet Physical and Digital Worlds</dc:title>
+    <owl:versionIRI rdf:resource=""/>
+    <dc:source>rioter</dc:source>
+    <dc:contributor>Eugene Westerhof</dc:contributor>
+    <dcterms:modified>15/11/2018</dcterms:modified>
+    <dcterms:created>15/11/2018</dcterms:created>
+    <owl:versionInfo>1.0.0</owl:versionInfo>
+    <dc:contributor>Lluis Echeverria</dc:contributor>
+    <dc:description>The ontology is focused on a data model for meeting IoT services with real measurements and the corresponding real-objects (even devices or natural objects).</dc:description>
+    <dc:creator>Aitor Corchero Rodríguez</dc:creator>
+    <dc:contributor>Xavier Domingo i Albin</dc:contributor>
+    <owl:imports rdf:resource="http://dublincore.org/2012/06/14/dcelements"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="http://w3id.org/saref#UnitOfmeasure">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Property">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://w3id.org/saref#Property"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <j.0:NodeShape rdf:ID="DigitalRepresentation">
+        <rdfs:subClassOf>
+          <j.0:NodeShape rdf:about="https://www.w3.org/ns/td#Thing">
+            <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+          </j.0:NodeShape>
+        </rdfs:subClassOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+      </j.0:NodeShape>
+    </rdfs:subClassOf>
+    <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Operation">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Geometry">
+    <rdfs:comment>An object to determine the spatial aspect of the Feature.</rdfs:comment>
+    <rdfs:label>Geometry</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Indicator">
+    <rdfs:subClassOf>
+      <j.0:NodeShape rdf:about="http://w3id.org/saref#Measurement">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+      </j.0:NodeShape>
+    </rdfs:subClassOf>
+    <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+  </owl:Class>
+  <owl:Class rdf:ID="MeasurementQuality">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Asset">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+  </owl:Class>
+  <owl:Class rdf:ID="NaturalArtifact">
+    <rdfs:subClassOf>
+      <j.0:NodeShape rdf:ID="SampledFeature">
+        <rdfs:subClassOf>
+          <j.0:NodeShape rdf:ID="PhysicalObject">
+            <rdfs:subClassOf rdf:resource="#Asset"/>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+          </j.0:NodeShape>
+        </rdfs:subClassOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+      </j.0:NodeShape>
+    </rdfs:subClassOf>
+    <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/saref#Device">
+    <rdfs:subClassOf>
+      <j.0:NodeShape rdf:ID="System">
+        <rdfs:subClassOf>
+          <j.0:NodeShape rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact">
+            <rdfs:subClassOf rdf:resource="#SampledFeature"/>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+          </j.0:NodeShape>
+        </rdfs:subClassOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+      </j.0:NodeShape>
+    </rdfs:subClassOf>
+    <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Action">
+    <rdfs:subClassOf rdf:resource="#DigitalRepresentation"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Infrastructure">
+    <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+  </owl:Class>
+  <owl:Class rdf:ID="IndexElement">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Index">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/saref#Property">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/Unit_of_measure">
+    <rdfs:subClassOf rdf:resource="http://w3id.org/saref#UnitOfmeasure"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Event">
+    <rdfs:subClassOf rdf:resource="#DigitalRepresentation"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/saref#Sensor">
+    <rdfs:subClassOf>
+      <j.0:NodeShape rdf:ID="Device">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/saref#Device"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+      </j.0:NodeShape>
+    </rdfs:subClassOf>
+    <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://w3id.org/saref#Actuator">
+    <rdfs:subClassOf rdf:resource="#Device"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Scale">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://w3id.org/saref#makesMeasurement"/>
+  <owl:ObjectProperty rdf:ID="associatedTo">
+    <rdfs:domain rdf:resource="#MeasurementQuality"/>
+    <rdfs:range rdf:resource="#System"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="affectsProperty">
+    <rdfs:range rdf:resource="http://w3id.org/saref#Property"/>
+    <rdfs:domain rdf:resource="http://w3id.org/saref#Actuator"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="domain">
+    <rdfs:range>
+      <j.0:NodeShape rdf:ID="Domain">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+      </j.0:NodeShape>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="inputData">
+    <rdfs:range rdf:resource="http://w3id.org/saref#Measurement"/>
+    <rdfs:domain>
+      <j.0:NodeShape rdf:ID="Input">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+      </j.0:NodeShape>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+  <owl:ObjectProperty rdf:ID="isPartOf">
+    <rdfs:range rdf:resource="#System"/>
+    <rdfs:domain rdf:resource="#System"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="associatedQuality">
+    <rdfs:range rdf:resource="#MeasurementQuality"/>
+    <rdfs:domain rdf:resource="http://w3id.org/saref#Measurement"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="input">
+    <rdfs:range rdf:resource="#Input"/>
+    <rdfs:domain rdf:resource="#Operation"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="digitalRepresentation">
+    <rdfs:range rdf:resource="#DigitalRepresentation"/>
+    <rdfs:domain rdf:resource="#System"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasSystem">
+    <rdfs:range rdf:resource="#System"/>
+    <rdfs:domain rdf:resource="#Infrastructure"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://w3id.org/saref#measuresProperty"/>
+  <owl:ObjectProperty rdf:about="http://w3id.org/saref#relatesToProperty"/>
+  <owl:ObjectProperty rdf:ID="output">
+    <rdfs:range>
+      <j.0:NodeShape rdf:ID="Output">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+      </j.0:NodeShape>
+    </rdfs:range>
+    <rdfs:domain rdf:resource="#Operation"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://w3id.org/saref#isMeasuredBy">
+    <rdfs:isDefinedBy rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Unit_of_measure"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://w3id.org/saref#offers"/>
+  <owl:ObjectProperty rdf:ID="containsElement">
+    <rdfs:domain rdf:resource="#IndexElement"/>
+    <rdfs:range rdf:resource="#IndexElement"/>
+    <rdfs:domain rdf:resource="#Index"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="contains">
+    <rdfs:range rdf:resource="#PhysicalObject"/>
+    <rdfs:domain rdf:resource="#PhysicalObject"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="outputData">
+    <rdfs:range rdf:resource="http://w3id.org/saref#Measurement"/>
+    <rdfs:domain rdf:resource="#Output"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="scale">
+    <rdfs:range rdf:resource="#Scale"/>
+    <rdfs:domain rdf:resource="http://w3id.org/saref#Measurement"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="operation">
+    <rdfs:range rdf:resource="#Operation"/>
+    <rdfs:domain>
+      <j.0:NodeShape rdf:about="http://w3id.org/saref#Service">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+      </j.0:NodeShape>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="minValue"/>
+  <owl:DatatypeProperty rdf:ID="notation">
+    <rdfs:domain rdf:resource="#Index"/>
+    <rdfs:domain rdf:resource="#Property"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/saref#hasManufacturer">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#Device"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/saref#hasDescription">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#Device"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="maxValue"/>
+  <owl:DatatypeProperty rdf:about="http://www.opengis.net/ont/geosparql#GmlLiteral"/>
+  <owl:DatatypeProperty rdf:ID="code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/saref#href">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="description">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="quality">
+    <rdfs:domain rdf:resource="#MeasurementQuality"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.opengis.net/ont/geosparql#asWKT"/>
+  <owl:DatatypeProperty rdf:ID="symbol">
+    <rdfs:domain rdf:resource="#Index"/>
+    <rdfs:domain rdf:resource="#Property"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/saref#hasTimeStamp">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasMAC">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#Device"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/saref#hasValue"/>
+  <owl:DatatypeProperty rdf:ID="creationDate">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://w3id.org/saref#contentType">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="identifier">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="name">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <rioter:Domain rdf:ID="Climate">
+    <saref:hasDescription>Climate Domain Information</saref:hasDescription>
+    <rioter:name>Climate Domain</rioter:name>
+  </rioter:Domain>
+  <rioter:Operation rdf:ID="POST">
+    <rioter:name>POST</rioter:name>
+    <saref:hasDescription>POST Operation attached to the services</saref:hasDescription>
+  </rioter:Operation>
+  <j.0:NodeShape rdf:ID="Command">
+    <rdfs:subClassOf>
+      <j.0:NodeShape rdf:about="http://w3id.org/saref#Command">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+      </j.0:NodeShape>
+    </rdfs:subClassOf>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </j.0:NodeShape>
+  <rioter:Operation rdf:ID="PUT">
+    <rioter:name>PUT</rioter:name>
+    <saref:hasDescription>PUT operation attached to teh service</saref:hasDescription>
+  </rioter:Operation>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+  <j.0:NodeShape rdf:about="http://www.opengis.net/ont/geosparql#Feature">
+    <rdfs:comment>Natural geographical features consist of landforms and ecosystems. For example, terrain types, physical factors of the environment) are natural geographical features. Conversely, human settlements or other engineered forms are considered types of artificial geographical features.</rdfs:comment>
+    <rdfs:label>Feature</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </j.0:NodeShape>
+  <rioter:Domain rdf:ID="Economic">
+    <rioter:name>Economic Domain</rioter:name>
+    <saref:hasDescription>Economic Domain Inforamtion</saref:hasDescription>
+  </rioter:Domain>
+  <rioter:Operation rdf:ID="DELETE">
+    <rioter:name>DELETE</rioter:name>
+    <saref:hasDescription>DELETE operation attached to a custom service</saref:hasDescription>
+  </rioter:Operation>
+  <rioter:Domain rdf:ID="Regulatory">
+    <rioter:name>Regulatory Domain</rioter:name>
+    <saref:hasDescription>Regulatory Domain inforamtion</saref:hasDescription>
+  </rioter:Domain>
+  <rioter:Domain rdf:ID="Food">
+    <rioter:name>Food Domain</rioter:name>
+    <saref:hasDescription>Food domain Inforamtion	</saref:hasDescription>
+  </rioter:Domain>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+  <rioter:Operation rdf:ID="GET">
+    <rioter:name>GET</rioter:name>
+    <saref:hasDescription>GET Operation attached to the services</saref:hasDescription>
+  </rioter:Operation>
+  <rioter:Domain rdf:ID="Water">
+    <rioter:name>Water Domain</rioter:name>
+    <rioter:description>Water Domain inforamtion</rioter:description>
+  </rioter:Domain>
+  <rioter:Domain rdf:ID="Environment">
+    <rioter:name>Environment Domain</rioter:name>
+    <saref:hasDescription>Environment Domain Inforamtion</saref:hasDescription>
+  </rioter:Domain>
+  <rioter:Domain rdf:ID="Energy">
+    <rioter:name>Energy domain</rioter:name>
+    <saref:hasDescription>Energy Domain Information</saref:hasDescription>
+  </rioter:Domain>
+  <j.0:NodeShape rdf:ID="CriticalInfrastructure">
+    <rdfs:subClassOf rdf:resource="#Infrastructure"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </j.0:NodeShape>
+  <rioter:Domain rdf:ID="Land">
+    <rioter:name>Land Domain</rioter:name>
+    <saref:hasDescription>Land Domain information</saref:hasDescription>
+  </rioter:Domain>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->

@@ -1,0 +1,756 @@
+<http://w3id.org/rioter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/rioter> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/rioter> .
+<http://w3id.org/rioter> <http://purl.org/dc/elements/1.1/contributor> "Eugene Westerhof" .
+<http://w3id.org/rioter> <http://purl.org/dc/elements/1.1/contributor> "Lluis Echeverria" .
+<http://w3id.org/rioter> <http://purl.org/dc/elements/1.1/contributor> "Xavier Domingo i Albin" .
+<http://w3id.org/rioter> <http://purl.org/dc/elements/1.1/creator> "Aitor Corchero Rodríguez" .
+<http://w3id.org/rioter> <http://purl.org/dc/elements/1.1/description> "The ontology is focused on a data model for meeting IoT services with real measurements and the corresponding real-objects (even devices or natural objects)." .
+<http://w3id.org/rioter> <http://purl.org/dc/elements/1.1/source> "rioter" .
+<http://w3id.org/rioter> <http://purl.org/dc/elements/1.1/title> "Rioter ontology to meet Physical and Digital Worlds" .
+<http://w3id.org/rioter> <http://purl.org/dc/terms/created> "15/11/2018" .
+<http://w3id.org/rioter> <http://purl.org/dc/terms/license> "https://opensource.org/licenses/MIT" .
+<http://w3id.org/rioter> <http://purl.org/dc/terms/modified> "15/11/2018" .
+<http://w3id.org/rioter> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://purl.org/dc/terms/description> "Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity."@en .
+<http://purl.org/dc/elements/1.1/creator> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#creator-006> .
+<http://purl.org/dc/elements/1.1/creator> <http://purl.org/dc/terms/issued> "1999-07-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/creator> <http://purl.org/dc/terms/modified> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity primarily responsible for making the resource."@en .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/2000/01/rdf-schema#label> "Creator"@en .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/terms/description> "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."@en .
+<http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#description-006> .
+<http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/terms/issued> "1999-07-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/terms/modified> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/2000/01/rdf-schema#comment> "An account of the resource."@en .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/2000/01/rdf-schema#label> "Description"@en .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en .
+# 
+# http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> <http://purl.org/dc/terms/description> "The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."@en .
+<http://purl.org/dc/elements/1.1/source> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#source-006> .
+<http://purl.org/dc/elements/1.1/source> <http://purl.org/dc/terms/issued> "1999-07-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/source> <http://purl.org/dc/terms/modified> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/source> <http://www.w3.org/2000/01/rdf-schema#comment> "A related resource from which the described resource is derived."@en .
+<http://purl.org/dc/elements/1.1/source> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/source> <http://www.w3.org/2000/01/rdf-schema#label> "Source"@en .
+<http://purl.org/dc/elements/1.1/source> <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#title-006> .
+<http://purl.org/dc/elements/1.1/title> <http://purl.org/dc/terms/issued> "1999-07-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/title> <http://purl.org/dc/terms/modified> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#comment> "A name given to the resource."@en .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#label> "Title"@en .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/hasVersion
+<http://purl.org/dc/terms/hasVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#note
+<http://www.w3.org/2004/02/skos/core#note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/rioter#affectsProperty
+<http://w3id.org/rioter#affectsProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter#affectsProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/saref#Actuator> .
+<http://w3id.org/rioter#affectsProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/saref#Property> .
+# 
+# http://w3id.org/rioter#associatedQuality
+<http://w3id.org/rioter#associatedQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter#associatedQuality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/saref#Measurement> .
+<http://w3id.org/rioter#associatedQuality> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter#MeasurementQuality> .
+# 
+# http://w3id.org/rioter#associatedTo
+<http://w3id.org/rioter#associatedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter#associatedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter#MeasurementQuality> .
+<http://w3id.org/rioter#associatedTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter#System> .
+# 
+# http://w3id.org/rioter#contains
+<http://w3id.org/rioter#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter#contains> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter#PhysicalObject> .
+<http://w3id.org/rioter#contains> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter#PhysicalObject> .
+# 
+# http://w3id.org/rioter#containsElement
+<http://w3id.org/rioter#containsElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter#containsElement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter#Index> .
+<http://w3id.org/rioter#containsElement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter#IndexElement> .
+<http://w3id.org/rioter#containsElement> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter#IndexElement> .
+# 
+# http://w3id.org/rioter#digitalRepresentation
+<http://w3id.org/rioter#digitalRepresentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter#digitalRepresentation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter#System> .
+<http://w3id.org/rioter#digitalRepresentation> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter#DigitalRepresentation> .
+# 
+# http://w3id.org/rioter#domain
+<http://w3id.org/rioter#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter#domain> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter#Domain> .
+# 
+# http://w3id.org/rioter#hasSystem
+<http://w3id.org/rioter#hasSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter#hasSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter#Infrastructure> .
+<http://w3id.org/rioter#hasSystem> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter#System> .
+# 
+# http://w3id.org/rioter#input
+<http://w3id.org/rioter#input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter#input> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter#Operation> .
+<http://w3id.org/rioter#input> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter#Input> .
+# 
+# http://w3id.org/rioter#inputData
+<http://w3id.org/rioter#inputData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter#inputData> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter#Input> .
+<http://w3id.org/rioter#inputData> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/saref#Measurement> .
+# 
+# http://w3id.org/rioter#isPartOf
+<http://w3id.org/rioter#isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter#isPartOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter#System> .
+<http://w3id.org/rioter#isPartOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter#System> .
+# 
+# http://w3id.org/rioter#operation
+<http://w3id.org/rioter#operation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter#operation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/saref#Service> .
+<http://w3id.org/rioter#operation> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter#Operation> .
+# 
+# http://w3id.org/rioter#output
+<http://w3id.org/rioter#output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter#output> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter#Operation> .
+<http://w3id.org/rioter#output> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter#Output> .
+# 
+# http://w3id.org/rioter#outputData
+<http://w3id.org/rioter#outputData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter#outputData> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter#Output> .
+<http://w3id.org/rioter#outputData> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/saref#Measurement> .
+# 
+# http://w3id.org/rioter#scale
+<http://w3id.org/rioter#scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/rioter#scale> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/saref#Measurement> .
+<http://w3id.org/rioter#scale> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/rioter#Scale> .
+# 
+# http://w3id.org/saref#isMeasuredBy
+<http://w3id.org/saref#isMeasuredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/saref#isMeasuredBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.wurvoc.org/vocabularies/om-1.8/Unit_of_measure> .
+# 
+# http://w3id.org/saref#makesMeasurement
+<http://w3id.org/saref#makesMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://w3id.org/saref#measuresProperty
+<http://w3id.org/saref#measuresProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://w3id.org/saref#offers
+<http://w3id.org/saref#offers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://w3id.org/saref#relatesToProperty
+<http://w3id.org/saref#relatesToProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.opengis.net/ont/geosparql#hasGeometry
+<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/rioter#code
+<http://w3id.org/rioter#code> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/rioter#code> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://w3id.org/rioter#creationDate
+<http://w3id.org/rioter#creationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/rioter#creationDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://w3id.org/rioter#description
+<http://w3id.org/rioter#description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/rioter#description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://w3id.org/rioter#hasMAC
+<http://w3id.org/rioter#hasMAC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/rioter#hasMAC> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter#Device> .
+<http://w3id.org/rioter#hasMAC> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://w3id.org/rioter#identifier
+<http://w3id.org/rioter#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/rioter#identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://w3id.org/rioter#maxValue
+<http://w3id.org/rioter#maxValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://w3id.org/rioter#minValue
+<http://w3id.org/rioter#minValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://w3id.org/rioter#name
+<http://w3id.org/rioter#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/rioter#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://w3id.org/rioter#notation
+<http://w3id.org/rioter#notation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/rioter#notation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter#Index> .
+<http://w3id.org/rioter#notation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter#Property> .
+<http://w3id.org/rioter#notation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://w3id.org/rioter#quality
+<http://w3id.org/rioter#quality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/rioter#quality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter#MeasurementQuality> .
+<http://w3id.org/rioter#quality> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://w3id.org/rioter#symbol
+<http://w3id.org/rioter#symbol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/rioter#symbol> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter#Index> .
+<http://w3id.org/rioter#symbol> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter#Property> .
+<http://w3id.org/rioter#symbol> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://w3id.org/saref#contentType
+<http://w3id.org/saref#contentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/saref#contentType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://w3id.org/saref#hasDescription
+<http://w3id.org/saref#hasDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/saref#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter#Device> .
+<http://w3id.org/saref#hasDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://w3id.org/saref#hasManufacturer
+<http://w3id.org/saref#hasManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/saref#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/rioter#Device> .
+<http://w3id.org/saref#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://w3id.org/saref#hasTimeStamp
+<http://w3id.org/saref#hasTimeStamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/saref#hasTimeStamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://w3id.org/saref#hasValue
+<http://w3id.org/saref#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://w3id.org/saref#href
+<http://w3id.org/saref#href> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/saref#href> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.opengis.net/ont/geosparql#GmlLiteral
+<http://www.opengis.net/ont/geosparql#GmlLiteral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.opengis.net/ont/geosparql#asWKT
+<http://www.opengis.net/ont/geosparql#asWKT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/rioter#Action
+<http://w3id.org/rioter#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#Action> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter#DigitalRepresentation> .
+# 
+# http://w3id.org/rioter#Asset
+<http://w3id.org/rioter#Asset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#Asset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/rioter#Command
+<http://w3id.org/rioter#Command> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#Command> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/saref#Command> .
+# 
+# http://w3id.org/rioter#CriticalInfrastructure
+<http://w3id.org/rioter#CriticalInfrastructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#CriticalInfrastructure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter#Infrastructure> .
+# 
+# http://w3id.org/rioter#Device
+<http://w3id.org/rioter#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/saref#Device> .
+# 
+# http://w3id.org/rioter#DigitalRepresentation
+<http://w3id.org/rioter#DigitalRepresentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#DigitalRepresentation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3.org/ns/td#Thing> .
+# 
+# http://w3id.org/rioter#Domain
+<http://w3id.org/rioter#Domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#Domain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/rioter#Event
+<http://w3id.org/rioter#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter#DigitalRepresentation> .
+# 
+# http://w3id.org/rioter#Index
+<http://w3id.org/rioter#Index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#Index> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/rioter#IndexElement
+<http://w3id.org/rioter#IndexElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#IndexElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/rioter#Indicator
+<http://w3id.org/rioter#Indicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#Indicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/saref#Measurement> .
+# 
+# http://w3id.org/rioter#Infrastructure
+<http://w3id.org/rioter#Infrastructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#Infrastructure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> .
+# 
+# http://w3id.org/rioter#Input
+<http://w3id.org/rioter#Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#Input> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/rioter#MeasurementQuality
+<http://w3id.org/rioter#MeasurementQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#MeasurementQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/rioter#NaturalArtifact
+<http://w3id.org/rioter#NaturalArtifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#NaturalArtifact> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter#SampledFeature> .
+# 
+# http://w3id.org/rioter#Operation
+<http://w3id.org/rioter#Operation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#Operation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/rioter#Output
+<http://w3id.org/rioter#Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#Output> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/rioter#PhysicalObject
+<http://w3id.org/rioter#PhysicalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#PhysicalObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter#Asset> .
+# 
+# http://w3id.org/rioter#Property
+<http://w3id.org/rioter#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter#DigitalRepresentation> .
+<http://w3id.org/rioter#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/saref#Property> .
+# 
+# http://w3id.org/rioter#SampledFeature
+<http://w3id.org/rioter#SampledFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#SampledFeature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter#PhysicalObject> .
+# 
+# http://w3id.org/rioter#Scale
+<http://w3id.org/rioter#Scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#Scale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/rioter#System
+<http://w3id.org/rioter#System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/rioter#System> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> .
+# 
+# http://w3id.org/saref#Actuator
+<http://w3id.org/saref#Actuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/saref#Actuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter#Device> .
+# 
+# http://w3id.org/saref#Command
+<http://w3id.org/saref#Command> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/saref#Command> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/saref#Device
+<http://w3id.org/saref#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter#System> .
+# 
+# http://w3id.org/saref#Measurement
+<http://w3id.org/saref#Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/saref#Property
+<http://w3id.org/saref#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/saref#Sensor
+<http://w3id.org/saref#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/saref#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter#Device> .
+# 
+# http://w3id.org/saref#Service
+<http://w3id.org/saref#Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/saref#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://w3id.org/saref#UnitOfmeasure
+<http://w3id.org/saref#UnitOfmeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/saref#UnitOfmeasure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/rioter#SampledFeature> .
+# 
+# http://www.opengis.net/ont/geosparql#Feature
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://www.opengis.net/ont/geosparql#Geometry
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "An object to determine the spatial aspect of the Feature." .
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2000/01/rdf-schema#label> "Geometry" .
+# 
+# http://www.w3.org/ns/shacl#NodeShape
+<http://www.w3.org/ns/shacl#NodeShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.wurvoc.org/vocabularies/om-1.8/Unit_of_measure
+<http://www.wurvoc.org/vocabularies/om-1.8/Unit_of_measure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.wurvoc.org/vocabularies/om-1.8/Unit_of_measure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/saref#UnitOfmeasure> .
+# 
+# https://www.w3.org/ns/td#Thing
+<https://www.w3.org/ns/td#Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3.org/ns/td#Thing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/rioter#Action
+<http://w3id.org/rioter#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# http://w3id.org/rioter#Asset
+<http://w3id.org/rioter#Asset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#Asset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# http://w3id.org/rioter#Climate
+<http://w3id.org/rioter#Climate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#Climate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/rioter#Domain> .
+<http://w3id.org/rioter#Climate> <http://w3id.org/rioter#name> "Climate Domain" .
+<http://w3id.org/rioter#Climate> <http://w3id.org/saref#hasDescription> "Climate Domain Information" .
+# 
+# http://w3id.org/rioter#Command
+<http://w3id.org/rioter#Command> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#Command> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# http://w3id.org/rioter#CriticalInfrastructure
+<http://w3id.org/rioter#CriticalInfrastructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#CriticalInfrastructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# http://w3id.org/rioter#DELETE
+<http://w3id.org/rioter#DELETE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#DELETE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/rioter#Operation> .
+<http://w3id.org/rioter#DELETE> <http://w3id.org/rioter#name> "DELETE" .
+<http://w3id.org/rioter#DELETE> <http://w3id.org/saref#hasDescription> "DELETE operation attached to a custom service" .
+# 
+# http://w3id.org/rioter#Device
+<http://w3id.org/rioter#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# http://w3id.org/rioter#DigitalRepresentation
+<http://w3id.org/rioter#DigitalRepresentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#DigitalRepresentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# http://w3id.org/rioter#Domain
+<http://w3id.org/rioter#Domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#Domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# http://w3id.org/rioter#Economic
+<http://w3id.org/rioter#Economic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#Economic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/rioter#Domain> .
+<http://w3id.org/rioter#Economic> <http://w3id.org/rioter#name> "Economic Domain" .
+<http://w3id.org/rioter#Economic> <http://w3id.org/saref#hasDescription> "Economic Domain Inforamtion" .
+# 
+# http://w3id.org/rioter#Energy
+<http://w3id.org/rioter#Energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#Energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/rioter#Domain> .
+<http://w3id.org/rioter#Energy> <http://w3id.org/rioter#name> "Energy domain" .
+<http://w3id.org/rioter#Energy> <http://w3id.org/saref#hasDescription> "Energy Domain Information" .
+# 
+# http://w3id.org/rioter#Environment
+<http://w3id.org/rioter#Environment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#Environment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/rioter#Domain> .
+<http://w3id.org/rioter#Environment> <http://w3id.org/rioter#name> "Environment Domain" .
+<http://w3id.org/rioter#Environment> <http://w3id.org/saref#hasDescription> "Environment Domain Inforamtion" .
+# 
+# http://w3id.org/rioter#Event
+<http://w3id.org/rioter#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# http://w3id.org/rioter#Food
+<http://w3id.org/rioter#Food> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#Food> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/rioter#Domain> .
+<http://w3id.org/rioter#Food> <http://w3id.org/rioter#name> "Food Domain" .
+<http://w3id.org/rioter#Food> <http://w3id.org/saref#hasDescription> "Food domain Inforamtion\t" .
+# 
+# http://w3id.org/rioter#GET
+<http://w3id.org/rioter#GET> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#GET> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/rioter#Operation> .
+<http://w3id.org/rioter#GET> <http://w3id.org/rioter#name> "GET" .
+<http://w3id.org/rioter#GET> <http://w3id.org/saref#hasDescription> "GET Operation attached to the services" .
+# 
+# http://w3id.org/rioter#Indicator
+<http://w3id.org/rioter#Indicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#Indicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# http://w3id.org/rioter#Infrastructure
+<http://w3id.org/rioter#Infrastructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#Infrastructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# http://w3id.org/rioter#Input
+<http://w3id.org/rioter#Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# http://w3id.org/rioter#Land
+<http://w3id.org/rioter#Land> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#Land> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/rioter#Domain> .
+<http://w3id.org/rioter#Land> <http://w3id.org/rioter#name> "Land Domain" .
+<http://w3id.org/rioter#Land> <http://w3id.org/saref#hasDescription> "Land Domain information" .
+# 
+# http://w3id.org/rioter#NaturalArtifact
+<http://w3id.org/rioter#NaturalArtifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#NaturalArtifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# http://w3id.org/rioter#Operation
+<http://w3id.org/rioter#Operation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#Operation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# http://w3id.org/rioter#Output
+<http://w3id.org/rioter#Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# http://w3id.org/rioter#POST
+<http://w3id.org/rioter#POST> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#POST> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/rioter#Operation> .
+<http://w3id.org/rioter#POST> <http://w3id.org/rioter#name> "POST" .
+<http://w3id.org/rioter#POST> <http://w3id.org/saref#hasDescription> "POST Operation attached to the services" .
+# 
+# http://w3id.org/rioter#PUT
+<http://w3id.org/rioter#PUT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#PUT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/rioter#Operation> .
+<http://w3id.org/rioter#PUT> <http://w3id.org/rioter#name> "PUT" .
+<http://w3id.org/rioter#PUT> <http://w3id.org/saref#hasDescription> "PUT operation attached to teh service" .
+# 
+# http://w3id.org/rioter#PhysicalObject
+<http://w3id.org/rioter#PhysicalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#PhysicalObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# http://w3id.org/rioter#Property
+<http://w3id.org/rioter#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# http://w3id.org/rioter#Regulatory
+<http://w3id.org/rioter#Regulatory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#Regulatory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/rioter#Domain> .
+<http://w3id.org/rioter#Regulatory> <http://w3id.org/rioter#name> "Regulatory Domain" .
+<http://w3id.org/rioter#Regulatory> <http://w3id.org/saref#hasDescription> "Regulatory Domain inforamtion" .
+# 
+# http://w3id.org/rioter#SampledFeature
+<http://w3id.org/rioter#SampledFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#SampledFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# http://w3id.org/rioter#System
+<http://w3id.org/rioter#System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# http://w3id.org/rioter#Water
+<http://w3id.org/rioter#Water> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/rioter#Water> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/rioter#Domain> .
+<http://w3id.org/rioter#Water> <http://w3id.org/rioter#description> "Water Domain inforamtion" .
+<http://w3id.org/rioter#Water> <http://w3id.org/rioter#name> "Water Domain" .
+# 
+# http://w3id.org/saref#Actuator
+<http://w3id.org/saref#Actuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/saref#Actuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# http://w3id.org/saref#Command
+<http://w3id.org/saref#Command> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/saref#Command> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# http://w3id.org/saref#Device
+<http://w3id.org/saref#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/saref#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# http://w3id.org/saref#Measurement
+<http://w3id.org/saref#Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/saref#Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# http://w3id.org/saref#Sensor
+<http://w3id.org/saref#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/saref#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# http://w3id.org/saref#Service
+<http://w3id.org/saref#Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/saref#Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# http://www.opengis.net/ont/geosparql#Feature
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# https://www.w3.org/ns/td#Thing
+<https://www.w3.org/ns/td#Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3.org/ns/td#Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://purl.org/dc/elements/1.1/> <http://purl.org/dc/terms/modified> "2012-06-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/> <http://purl.org/dc/terms/publisher> <http://purl.org/dc/aboutdcmi#DCMI> .
+<http://purl.org/dc/elements/1.1/> <http://purl.org/dc/terms/title> "Dublin Core Metadata Element Set, Version 1.1"@en .
+# 
+<http://purl.org/dc/elements/1.1/contributor> <http://purl.org/dc/terms/description> "Examples of a Contributor include a person, an organization, or a service. Typically, the name of a Contributor should be used to indicate the entity."@en .
+<http://purl.org/dc/elements/1.1/contributor> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#contributor-006> .
+<http://purl.org/dc/elements/1.1/contributor> <http://purl.org/dc/terms/issued> "1999-07-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/contributor> <http://purl.org/dc/terms/modified> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity responsible for making contributions to the resource."@en .
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/2000/01/rdf-schema#label> "Contributor"@en .
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en .
+# 
+<http://purl.org/dc/elements/1.1/coverage> <http://purl.org/dc/terms/description> "Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended best practice is to use a controlled vocabulary such as the Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges."@en .
+<http://purl.org/dc/elements/1.1/coverage> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#coverage-006> .
+<http://purl.org/dc/elements/1.1/coverage> <http://purl.org/dc/terms/issued> "1999-07-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/coverage> <http://purl.org/dc/terms/modified> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/coverage> <http://www.w3.org/2000/01/rdf-schema#comment> "The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant."@en .
+<http://purl.org/dc/elements/1.1/coverage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/coverage> <http://www.w3.org/2000/01/rdf-schema#label> "Coverage"@en .
+<http://purl.org/dc/elements/1.1/coverage> <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en .
+# 
+# 
+<http://purl.org/dc/elements/1.1/date> <http://purl.org/dc/terms/description> "Date may be used to express temporal information at any level of granularity.  Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 [W3CDTF]."@en .
+<http://purl.org/dc/elements/1.1/date> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#date-006> .
+<http://purl.org/dc/elements/1.1/date> <http://purl.org/dc/terms/issued> "1999-07-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/date> <http://purl.org/dc/terms/modified> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/2000/01/rdf-schema#comment> "A point or period of time associated with an event in the lifecycle of the resource."@en .
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/2000/01/rdf-schema#label> "Date"@en .
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en .
+# 
+# 
+<http://purl.org/dc/elements/1.1/format> <http://purl.org/dc/terms/description> "Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME]."@en .
+<http://purl.org/dc/elements/1.1/format> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#format-007> .
+<http://purl.org/dc/elements/1.1/format> <http://purl.org/dc/terms/issued> "1999-07-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/format> <http://purl.org/dc/terms/modified> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/format> <http://www.w3.org/2000/01/rdf-schema#comment> "The file format, physical medium, or dimensions of the resource."@en .
+<http://purl.org/dc/elements/1.1/format> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/format> <http://www.w3.org/2000/01/rdf-schema#label> "Format"@en .
+<http://purl.org/dc/elements/1.1/format> <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en .
+# 
+<http://purl.org/dc/elements/1.1/identifier> <http://purl.org/dc/terms/description> "Recommended best practice is to identify the resource by means of a string conforming to a formal identification system. "@en .
+<http://purl.org/dc/elements/1.1/identifier> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#identifier-006> .
+<http://purl.org/dc/elements/1.1/identifier> <http://purl.org/dc/terms/issued> "1999-07-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/identifier> <http://purl.org/dc/terms/modified> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "An unambiguous reference to the resource within a given context."@en .
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "Identifier"@en .
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en .
+# 
+<http://purl.org/dc/elements/1.1/language> <http://purl.org/dc/terms/description> "Recommended best practice is to use a controlled vocabulary such as RFC 4646 [RFC4646]."@en .
+<http://purl.org/dc/elements/1.1/language> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#language-007> .
+<http://purl.org/dc/elements/1.1/language> <http://purl.org/dc/terms/issued> "1999-07-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/language> <http://purl.org/dc/terms/modified> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/language> <http://www.w3.org/2000/01/rdf-schema#comment> "A language of the resource."@en .
+<http://purl.org/dc/elements/1.1/language> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/language> <http://www.w3.org/2000/01/rdf-schema#label> "Language"@en .
+<http://purl.org/dc/elements/1.1/language> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.ietf.org/rfc/rfc4646.txt> .
+<http://purl.org/dc/elements/1.1/language> <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en .
+# 
+<http://purl.org/dc/elements/1.1/publisher> <http://purl.org/dc/terms/description> "Examples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity."@en .
+<http://purl.org/dc/elements/1.1/publisher> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#publisher-006> .
+<http://purl.org/dc/elements/1.1/publisher> <http://purl.org/dc/terms/issued> "1999-07-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/publisher> <http://purl.org/dc/terms/modified> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity responsible for making the resource available."@en .
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/2000/01/rdf-schema#label> "Publisher"@en .
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en .
+# 
+<http://purl.org/dc/elements/1.1/relation> <http://purl.org/dc/terms/description> "Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system. "@en .
+<http://purl.org/dc/elements/1.1/relation> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#relation-006> .
+<http://purl.org/dc/elements/1.1/relation> <http://purl.org/dc/terms/issued> "1999-07-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/relation> <http://purl.org/dc/terms/modified> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/relation> <http://www.w3.org/2000/01/rdf-schema#comment> "A related resource."@en .
+<http://purl.org/dc/elements/1.1/relation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/relation> <http://www.w3.org/2000/01/rdf-schema#label> "Relation"@en .
+<http://purl.org/dc/elements/1.1/relation> <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en .
+# 
+<http://purl.org/dc/elements/1.1/rights> <http://purl.org/dc/terms/description> "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights."@en .
+<http://purl.org/dc/elements/1.1/rights> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#rights-006> .
+<http://purl.org/dc/elements/1.1/rights> <http://purl.org/dc/terms/issued> "1999-07-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/rights> <http://purl.org/dc/terms/modified> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/2000/01/rdf-schema#comment> "Information about rights held in and over the resource."@en .
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/2000/01/rdf-schema#label> "Rights"@en .
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en .
+# 
+# 
+<http://purl.org/dc/elements/1.1/subject> <http://purl.org/dc/terms/description> "Typically, the subject will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary."@en .
+<http://purl.org/dc/elements/1.1/subject> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#subject-007> .
+<http://purl.org/dc/elements/1.1/subject> <http://purl.org/dc/terms/issued> "1999-07-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/subject> <http://purl.org/dc/terms/modified> "2012-06-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/subject> <http://www.w3.org/2000/01/rdf-schema#comment> "The topic of the resource."@en .
+<http://purl.org/dc/elements/1.1/subject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/subject> <http://www.w3.org/2000/01/rdf-schema#label> "Subject"@en .
+<http://purl.org/dc/elements/1.1/subject> <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en .
+# 
+# 
+<http://purl.org/dc/elements/1.1/type> <http://purl.org/dc/terms/description> "Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element."@en .
+<http://purl.org/dc/elements/1.1/type> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#type-006> .
+<http://purl.org/dc/elements/1.1/type> <http://purl.org/dc/terms/issued> "1999-07-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/type> <http://purl.org/dc/terms/modified> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/elements/1.1/type> <http://www.w3.org/2000/01/rdf-schema#comment> "The nature or genre of the resource."@en .
+<http://purl.org/dc/elements/1.1/type> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/type> <http://www.w3.org/2000/01/rdf-schema#label> "Type"@en .
+<http://purl.org/dc/elements/1.1/type> <http://www.w3.org/2004/02/skos/core#note> "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en .
+# 
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#comment> "Natural geographical features consist of landforms and ecosystems. For example, terrain types, physical factors of the environment) are natural geographical features. Conversely, human settlements or other engineered forms are considered types of artificial geographical features." .
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#label> "Feature" .
+# 
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

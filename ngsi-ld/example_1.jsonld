@@ -1,0 +1,125 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b0",
+    "@type" : "rdfs:Class",
+    "value" : "90%"
+  }, {
+    "@id" : "_:b1",
+    "@type" : "rdfs:Class",
+    "hasObject" : "example_1:Street_A"
+  }, {
+    "@id" : "_:b2",
+    "@type" : "rdfs:Class",
+    "createdAt" : "2018-01-01T00:00:00.00",
+    "modifiedAt" : "2018-01-01T00:00:00.00",
+    "value" : "30% busy",
+    "reliability" : "_:b0"
+  }, {
+    "@id" : "_:b3",
+    "@type" : "example_1:Street",
+    "createdAt" : "2018-01-01T00:00:00.00",
+    "hasObject" : "example_1:Street_A",
+    "modifiedAt" : "2018-01-01T00:00:00.00",
+    "hasOpening" : "_:b4"
+  }, {
+    "@id" : "_:b4",
+    "@type" : "rdfs:Class",
+    "hasObject" : "example_1:Gate_A"
+  }, {
+    "@id" : "http://uri.etsi.org/ngsi-ld/example_1",
+    "@type" : "owl:Ontology",
+    "imports" : "http://uri.etsi.org/ngsi-ld/coreContext/",
+    "versionInfo" : "Created with TopBraid Composer"
+  }, {
+    "@id" : "example_1:Car",
+    "@type" : "owl:Class",
+    "subClassOf" : "owl:Thing"
+  }, {
+    "@id" : "example_1:Gate",
+    "@type" : "owl:Class",
+    "subClassOf" : "owl:Thing"
+  }, {
+    "@id" : "example_1:Gate_A",
+    "@type" : "example_1:Gate",
+    "createdAt" : "2018-01-01T00:00:00.00",
+    "modifiedAt" : "2018-01-01T00:00:00.00"
+  }, {
+    "@id" : "example_1:Parking",
+    "@type" : "owl:Class",
+    "adjacentTo" : "_:b1",
+    "subClassOf" : "owl:Thing"
+  }, {
+    "@id" : "example_1:Parking_A",
+    "@type" : "example_1:Parking",
+    "adjacentTo" : "_:b3"
+  }, {
+    "@id" : "example_1:Street",
+    "@type" : "owl:Class",
+    "subClassOf" : "owl:Thing"
+  }, {
+    "@id" : "example_1:Street_A",
+    "@type" : "example_1:Street",
+    "hasState" : "_:b2"
+  }, {
+    "@id" : "example_1:adjacentTo",
+    "@type" : "rdf:Property"
+  }, {
+    "@id" : "example_1:hasOpening",
+    "@type" : "rdf:Property"
+  }, {
+    "@id" : "example_1:hasState",
+    "@type" : "rdf:Property"
+  }, {
+    "@id" : "example_1:reliability",
+    "@type" : "rdf:Property"
+  } ],
+  "@context" : {
+    "value" : {
+      "@id" : "http://uri.etsi.org/ngsi-ld/coreContext/value"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "imports" : {
+      "@id" : "http://www.w3.org/2002/07/owl#imports",
+      "@type" : "@id"
+    },
+    "adjacentTo" : {
+      "@id" : "http://uri.etsi.org/ngsi-ld/example_1#adjacentTo",
+      "@type" : "@id"
+    },
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
+    },
+    "hasState" : {
+      "@id" : "http://uri.etsi.org/ngsi-ld/example_1#hasState",
+      "@type" : "@id"
+    },
+    "modifiedAt" : {
+      "@id" : "http://uri.etsi.org/ngsi-ld/coreContext/modifiedAt",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "createdAt" : {
+      "@id" : "http://uri.etsi.org/ngsi-ld/coreContext/createdAt",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasOpening" : {
+      "@id" : "http://uri.etsi.org/ngsi-ld/example_1#hasOpening",
+      "@type" : "@id"
+    },
+    "hasObject" : {
+      "@id" : "http://uri.etsi.org/ngsi-ld/coreContext/hasObject",
+      "@type" : "@id"
+    },
+    "reliability" : {
+      "@id" : "http://uri.etsi.org/ngsi-ld/example_1#reliability",
+      "@type" : "@id"
+    },
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "example_1" : "http://uri.etsi.org/ngsi-ld/example_1#"
+  }
+}
